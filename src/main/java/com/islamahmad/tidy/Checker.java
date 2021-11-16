@@ -27,7 +27,7 @@ public class Checker {
 			numbersStrings.forEach(number -> {numbers.add(Integer.parseInt(number));});
             //1- read the first value in the file to get the number of test cases
             //2- create a loop for the same number of expected lines 
-            for (int index = 1; index < numbers.get(0); index ++){
+            for (int index = 1; index <= numbers.get(0); index ++){
                 //3- for each test case, read the line
                 char[] currentNumber = numbersStrings.get(index).toCharArray();
                 Boolean result = checkTidiness(currentNumber); 
